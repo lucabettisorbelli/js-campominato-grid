@@ -4,8 +4,8 @@ const griglia = document.getElementById("grid");
 griglia.classList.add("hidden");
 
 
-function creaGriglia(numeroCaselle) {
-    for (let i = 1; i <= numeroCaselle; i++) {
+function creaGriglia(numeroCelle) {
+    for (let i = 1; i <= numeroCelle; i++) {
         // nuova casella
         const nuovoDiv = document.createElement("div");
         nuovoDiv.classList.add("square");
@@ -27,19 +27,16 @@ function creaGriglia(numeroCaselle) {
     }
 }
 
-creaGriglia (numeroCaselle);
 
 
 bottone.addEventListener("click", function () {
     griglia.classList.toggle("hidden")
 });
 
+const select = document.getElementById("select");
+const numeroCelle = select.value;
+creaGriglia (numeroCelle);
 
-let selezioneNumero = document.getElementById("select");
 
 
-selezioneNumero.addEventListener("click", function () {
-    const numeroCaselle = parseInt(this.value);
-    creaGriglia(numeroCaselle);
-})
 
