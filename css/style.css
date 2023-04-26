@@ -35,6 +35,11 @@ main {
     color: green;
 }
 
+.square81 {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
 #grid .square {
     border: 2px white solid;
 }
@@ -45,4 +50,8 @@ main {
 
 .hidden {
     visibility: hidden;
+}
+
+#bottone {
+    margin: 10px;
 }
