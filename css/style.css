@@ -22,11 +22,10 @@ main {
     height: 600px;
     display: flex;
     flex-wrap: wrap;
+    border: 1px white solid;
 }
 
 #grid .square {
-    width: calc(100% / 10);
-    height: calc(100% / 10);
     cursor: crosshair;
     display: flex;
     align-items: center;
